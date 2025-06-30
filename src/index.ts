@@ -2,7 +2,7 @@ const division = (a: number, b: number): number => {
   return a / b;
 };
 
-console.log(division(6, 0));
+console.log(division(6, 2));
 
 //test 3
 
@@ -38,3 +38,10 @@ console.log('test 4')
 console.log(calculateSum(arr))
 
 //test 5
+
+const isAdult = (age: number): boolean =>{
+   return age >= 18;
+}
+console.log('test 5')
+console.log(isAdult(18))
+console.log(isAdult(12))
