@@ -64,3 +64,14 @@ console.log(tasks.filter((task: Task): boolean => !task.isCompleted))
 showUncompletedTasks(tasks)
 
 //test 7 
+
+const greet = (name: string, age: number): void =>{
+    console.log(`Hi ${name}. Your age is ${age}`)
+}
+greet('Pablo', 33)
+
+//test8
+const convertToUpperCase = (text: string): string =>{
+    return text.toUpperCase()
+}
+console.log(convertToUpperCase('privet, kak dela'))
