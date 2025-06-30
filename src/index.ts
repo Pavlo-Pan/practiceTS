@@ -45,3 +45,22 @@ const isAdult = (age: number): boolean =>{
 console.log('test 5')
 console.log(isAdult(18))
 console.log(isAdult(12))
+
+//test 6
+interface Task {
+    title: string,
+    description: string,
+    isCompleted: boolean
+}
+const tasks: Task[]=[
+    {title:'feed a cat', description:'take in waredrobcats food', isCompleted: false},
+    {title:'give a cat water', description: 'take a water from filter', isCompleted: true}
+]
+
+
+const showUncompletedTasks = (tasks: Task[]): void =>{
+console.log(tasks.filter((task: Task): boolean => !task.isCompleted))
+}
+showUncompletedTasks(tasks)
+
+//test 7 
